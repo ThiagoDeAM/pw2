@@ -25,8 +25,8 @@
 
 	$vet_1 = array();
 
-	for($i=1;$i<=50;$i++){
-		$vet_1[$i] = $i;
+	for($i=0;$i<50;$i++){
+		$vet_1[$i] = $i+1;
 	}
 	echo "<pre>";
 	print_r($vet_1);
@@ -66,8 +66,8 @@
 	echo "<br><br><strong>- - - - - EXERCÍCIO 4 - - - - -</strong><br><br>";
 
 	$vet_3=array();
-	for($i=1;$i<=50;$i++){
-		$vet_3[$i]= $i*2;
+	for($i=0;$i<50;$i++){
+		$vet_3[$i]= ($i+1)*2;
 	}
 	echo "<pre>";
 	print_r($vet_3);
@@ -110,5 +110,3 @@
 
 </body>
 </html>
-
-
