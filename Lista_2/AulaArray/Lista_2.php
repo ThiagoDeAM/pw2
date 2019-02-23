@@ -103,7 +103,7 @@
 
 	</option>
 	<?php 
-}
+		}
 	?>
 	</select>
 
