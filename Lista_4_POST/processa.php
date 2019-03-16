@@ -10,15 +10,15 @@ $vet = array (
 
 );
 $maior=0;
-
 for($i=0;$i<count($vet);$i++){
-    if($vet[$i]%2==0){
-        print $vet[$i];
-    }
     if($vet[$i]>$maior){
         $maior=$vet[$i];
     }
+    if($vet[$i]%2==0){
+        print $vet[$i]." ";
+    }
+
 }
-print $maior;
+print "<br>Maior número: ". $maior;
 
 ?>

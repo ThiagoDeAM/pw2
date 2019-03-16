@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Exercício 1</title>
+	<title>ExercÃ­cio 1</title>
 	<meta charset="utf-8">
 </head>
 <body>
     
-<form action="resultado-soma.php" method="POST">
-    Informe o 1° número:<input type="text" name="n1"><br>
-    Informe o 2° número:<input type="text" name="n2"><br>
-    Let's GO!<button type="submit" value="vai">
-</form>
+    <form action="resultado-soma.php" method="POST">
+        Informe o 1Â° nÃºmero: <input type="number" name="n1"><br><br>
+        Informe o 2Â° nÃºmero: <input type="number" name="n2"><br><br>
+        <button type="submit" value="vai">Let's GO!</button>
+    </form>
 
 </body>
 </html>
-<?php
-
-
-?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Exercício 1</title>
+	<title>ExercÃ­cio 1 -  Resultado</title>
 	<meta charset="utf-8">
 </head>
 <body>
@@ -13,7 +13,7 @@ $n2 = $_POST["n2"];
 
 $soma = $n1+$n2;
 
-echo $soma;
+echo "Resultado: ". $soma;
 ?>
 
 </body>

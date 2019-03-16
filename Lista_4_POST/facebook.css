@@ -1,0 +1,84 @@
+#site{
+    margin-left:10px;
+    width: 450px;
+}
+#nome{
+    width:209px;
+    height:35px;
+    border-radius:5px;
+    border-color:gray;
+    border-width:1px;
+    padding-left: 10px;
+}
+#sobrenome{
+    width:209px;
+    float:right;
+    height:35px;
+    border-radius:5px;
+    border-color:gray;
+    border-width:1px;
+    padding-left: 10px;
+}
+.e-mail_senha{
+    margin-top: 12px;
+    width:440px;
+    height:30px;
+    border-radius:5px;
+    border-color:gray;
+    border-width:1px;
+    padding-left: 10px;
+}
+h2{
+    margin: 10px 0 5px 0;
+}
+#dia{
+    background-color:#dddddd;
+    height:35px;
+    padding:5px;
+    float:left;
+}
+#mes{
+    background-color:#dddddd; 
+    height:35px;
+    padding:5px;
+    float:left;    
+}
+#ano{
+    background-color:#dddddd;  
+    height:35px;
+    padding:5px;
+    float:left;
+
+}
+#sexo{
+    height:50px;
+    float:left;
+    margin-top:20px;
+
+}
+#pergunta{
+    margin-left:10px;
+    font-size:16px;
+    text-decoration: none;
+    float:left;
+}
+p{
+    margin-top:0;
+    float:left;
+    color:gray;
+}
+a{
+    text-decoration: none;
+}
+button{
+    float:left;
+    font-size:larger;
+    font-weight: bold;
+    padding: 8px 25px 8px 25px;
+    background-color:green;
+    color:white;
+    border-width:1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
