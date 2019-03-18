@@ -26,22 +26,11 @@
 
 		<option>Dia</option>
 			<?php
-			$vet=array();
-			for($i=0;$i<31;$i++){
-				$vet[$i]=$i+1;
-				$soma=$soma+$i;
-			}
-			for($i=0;$i<31;$i++){
-			?>	
-		<option value="<?php $i ?>">
-			<?php
-				echo $vet[$i];
-			?>
 
-		</option>
-		<?php 
-			}
-		?>
+                            for($i=1;$i<=31;$i++){
+                                echo "<option value='$i'>$i</option>";
+                            }
+                        ?>	
 	</select>
 	<select id="mes" name="mes">
 
@@ -61,36 +50,20 @@
 				10=>Nov,
 				11=>Dez,
 			);
-			for($j=0;$j<12;$j++){
+                        for($j=0;$j<12;$j++){
+                            echo "<option value='$vet_1[$j]'>$vet_1[$j]</option>";
+                        }
 			?>	
-		<option value="<?php $j ?>">
-			<?php
-				echo $vet_1[$j];
-			?>
 
-		</option>
-		<?php 
-			}
-		?>
+
 	</select>
 	<select id="ano" name="ano">
 
 		<option>Ano</option>
 			<?php
-			$vet_2=array();
-			for($k=1904;$k<2019;$k++){
-				$vet_2[$k]=$k+1;
-				$soma=$soma+$k;
-			}
-			for($k=1904;$k<2019;$k++){
-			?>	
-		<option value="<?php $k ?>">
-			<?php
-				echo $vet_2[$k];
-			?>
 
-		</option>
-		<?php 
+			for($k=1905;$k<=2019;$k++){
+                            echo "<option value='$k'>$k</option>";
 			}
 		?>
 	</select>

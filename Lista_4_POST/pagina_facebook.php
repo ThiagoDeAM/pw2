@@ -1,5 +1,11 @@
 <?php
 
+$vet=array(
+    0=>$_POST["dia"],
+    1=>$_POST["mes"],
+    2=>$_POST["ano"]
+);
+
 echo "Bem vindo, ".$_POST["nome"]." ". $_POST["sobrenome"]."!<br>";
 
 if($_POST["email"]==$_POST["email_conf"]){
@@ -7,7 +13,8 @@ if($_POST["email"]==$_POST["email_conf"]){
 }else{
     echo "E-mail não identificado. Tente novamente.<br>";
 }
- 
-
+print $vet[0];
+print $vet[1];
+print $vet[2];
 ?>
 
