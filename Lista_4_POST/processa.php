@@ -10,15 +10,19 @@ $vet = array (
 
 );
 $maior=0;
+$vetor = array();
+$cont = 0;
 for($i=0;$i<count($vet);$i++){
     if($vet[$i]>$maior){
         $maior=$vet[$i];
     }
     if($vet[$i]%2==0){
-        print $vet[$i]." ";
+        $vetor[$cont]=$vet[$i];
+        $cont++;
     }
 
 }
+print "Números pares: ".implode($vetor,", ");
 print "<br>Maior número: ". $maior;
 
 ?>
