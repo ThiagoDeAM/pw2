@@ -10,16 +10,19 @@
         
     <h1>Abra uma conta</h1>
     <h3>É gratuito e sempre será.</h3>
-	    <input id="nome" type="text" name="nome" placeholder="Nome">
+        <form action="pagina_facebook.php" method="POST">
+            <input id="nome" type="text" name="nome" placeholder="Nome">
             <input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome"><br>
 	    <input class="e-mail_senha" type="text" name="email" placeholder="E-mail ou número do celular"><br>
 	    <input class="e-mail_senha" type="text" name="email_conf" placeholder="Insira novamente o email ou o celular"><br>
 	    <input class="e-mail_senha" type="password" name="senha" placeholder="Nova senha">  	
-   	
+   	        
+
+	    
     <h2>Aniversário</h2>
 
     <div id="aniversario">
-<select id="dia">
+        <select id="dia" name="dia">
 
 		<option>Dia</option>
 			<?php
@@ -30,7 +33,7 @@
 			}
 			for($i=0;$i<31;$i++){
 			?>	
-		<option>
+		<option value="<?php $i ?>">
 			<?php
 				echo $vet[$i];
 			?>
@@ -40,7 +43,7 @@
 			}
 		?>
 	</select>
-	<select id="mes">
+	<select id="mes" name="mes">
 
 		<option>Mês</option>
 			<?php
@@ -60,7 +63,7 @@
 			);
 			for($j=0;$j<12;$j++){
 			?>	
-		<option>
+		<option value="<?php $j ?>">
 			<?php
 				echo $vet_1[$j];
 			?>
@@ -70,7 +73,7 @@
 			}
 		?>
 	</select>
-	<select id="ano">
+	<select id="ano" name="ano">
 
 		<option>Ano</option>
 			<?php
@@ -81,7 +84,7 @@
 			}
 			for($k=1904;$k<2019;$k++){
 			?>	
-		<option>
+		<option value="<?php $k ?>">
 			<?php
 				echo $vet_2[$k];
 			?>
@@ -94,13 +97,13 @@
         <a href="#" id="pergunta">Por que preciso informar<br>minha data de nascimento?</a><br>     
     </div>
     <div id="sexo">
-        <input type="radio" name="senha">Feminino
-        <input type="radio" name="senha">Masculino      
+        <input type="radio" name="genero" value="F">Feminino
+        <input type="radio" name="genero" value="M">Masculino      
     </div>
 
     <p>Ao clicar Abrir uma conta, você concorda com os nossos<br> <a href="#">Termos</a> e que leu a nossa <a href="#">Política de Dados</a> incluindo o nosso <br><a href="#">Uso de Cookies</a>.</p>
-    <button>Abrir uma conta</button>
-    
+    <button type="submit" value="vai">Abrir uma conta</button>
+         </form>   
     </div>
    
 
