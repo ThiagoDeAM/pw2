@@ -13,8 +13,14 @@ if($_POST["email"]==$_POST["email_conf"]){
 }else{
     echo "E-mail não identificado. Tente novamente.<br>";
 }
-print $vet[0];
-print $vet[1];
-print $vet[2];
+
+if($_POST["genero"]=="F"){
+    print "Sexo: Feminino<br>";
+}else{
+    print "Sexo: Masculino<br>";
+}
+    print "Data de nascimento: ".$vet[0]." de ".$vet[1]." de ".$vet[2];
+
+
 ?>
 
