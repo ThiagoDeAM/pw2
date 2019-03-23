@@ -26,9 +26,14 @@ for($i=0;$i<count($vet);$i++){
         $c++;
     }
 }
+
+if($c==0){
+    print "Não há número múltiplo de 3 e 5.<br>";      
+}elseif($c>0){
+    print "Número(s) múltiplo(s) de 3 e 5: ".implode($multiplo,", ")."<br>";
+}
+
 print "Números pares: ".implode($vetor,", ");
 print "<br>Maior número: ". $maior."<br>";
-print "Números múltiplos de 3 e 5: ".implode($multiplo,", ");
-
 ?>
 

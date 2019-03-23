@@ -10,7 +10,7 @@ $movies=array(
     6=> "Capitão América: O Primeiro VIngador",
     7=> "Capitão América 2: O Soldado Invernal",
     8=> "Capitão América: Guerra Civil",
-    9=> "Homem-Aranha 2"
+    9=> "Homem-Aranha: Longe de Casa"
 );
 
 echo "<ul>";
