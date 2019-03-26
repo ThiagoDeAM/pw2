@@ -8,7 +8,10 @@ function novo_salario($salario,$percentual){
     return $porcentagem;
 }
 
-echo ()
+echo "Nome: ". $_POST["nome"]."<br>";
+echo "Salário: ".$salario."<br>";
+echo "Percentual de aumento: ".$percentual."<br>";
+echo "Novo salário: ".novo_salario($salario,$percentual)."<br>";
 
 
 ?>
